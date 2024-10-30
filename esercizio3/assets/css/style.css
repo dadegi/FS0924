@@ -1,0 +1,33 @@
+html, body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header, .title {
+    text-align: center;
+}
+
+header {
+    padding: 1rem;
+}
+
+header img {
+    width: 12%;
+}
+
+.container {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.videoRecipe video {
+    width: 100%;
+}
+
+.slogan {
+    text-align: center;
+    background-color: #FEFBF1;
+    padding: 1rem 0;
+    border-top: 2px solid #FFD977;
+    font-size: 0.8rem;
+    color: #004D4D;
+}
