@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h2>Codice Epicode</h2>
+            <div>
+                <img
+                    src="assets/img/EPICODE.png"
+                    alt="logo Epicode"
+                    width="100px"
+                />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Tabelle">Tabelle</a></li>
+                    <li id="visited">Form</li>
+                    <li><a href="video.html" title="Video">Video</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>FORMS</h1>
+
+        <main>
+            <section>
+                <article>
+                    <h2>Form semplice</h2>
+
+                    <form method="get" action="grazie.html">
+                        <label for="nome">Nome</label>&nbsp;
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Inserisci il nome"
+                        />
+                        <label for="cognome">Cognome</label>&nbsp;
+                        <input
+                            type="text"
+                            id="cognome"
+                            name="cognome"
+                            placeholder="Inserisci il cognome"
+                            required
+                        />
+                        <label for="email">Email</label>&nbsp;
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Inserisci una email valida"
+                        />
+                        <p>&nbsp;</p>
+                        <button type="submit" id="invia">INVIA</button>
+                        <button type="reset" id="cancella">CANCELLA</button>
+                    </form>
+                </article>
+
+                <hr />
+                <article>
+                    <h2>Form complesso</h2>
+
+                    <form method="get" action="grazie.html">
+                        <!-- Gruppo anagrafica -->
+                        <fieldset>
+                            <legend>Anagrafica</legend>
+                            <label for="nome">Nome</label>&nbsp;
+                            <input type="text" id="nome" name="nome" />
+                            <label for="cognome">Cognome</label>&nbsp;
+                            <input
+                                type="text"
+                                id="cognome"
+                                name="cognome"
+                                required
+                            />
+                            <label for="dataNascita">Data di nascita</label
+                            >&nbsp;
+                            <input
+                                type="date"
+                                id="dataNascita"
+                                name="dataNascita"
+                            />
+                            <br /><br />
+                            <label for="indirizzo">Indirizzo</label>
+                            <textarea
+                                name="indirizzo"
+                                id="indirizzo"
+                                rows="2"
+                                cols="50"
+                                placeholder="Inserisci il tuo indirizzo"
+                            ></textarea>
+                            <label for="telefono">Telefono</label>&nbsp;
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                placeholder="Es. 365-5642158"
+                            />
+                            <label for="email">Email</label>&nbsp;
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                minlength="9"
+                                required
+                            />
+                        </fieldset>
+                        <!-- Gruppo preferenze -->
+                        <fieldset>
+                            <legend>Preferenze</legend>
+                            <label for="corso">Corso scelto</label>&nbsp;
+                            <select id="corso" name="corso">
+                                <option value="" selected></option>
+                                <option value="FE">Front-End</option>
+                                <option value="BE">Back-End</option>
+                                <option value="FS">Fulls Stack</option>
+                            </select>
+                            <h4>Tipo di frequenza</h4>
+                            <input
+                                type="radio"
+                                id="part"
+                                name="frequenza"
+                                value="part"
+                            />
+                            <label for="part">Part-time</label><br />
+                            <input
+                                type="radio"
+                                id="full"
+                                name="frequenza"
+                                value="full"
+                            />
+                            <label for="full">Full-time</label><br />
+                            <input
+                                type="radio"
+                                id="serale"
+                                name="frequenza"
+                                value="serale"
+                            />
+                            <label for="serale">Serale</label>
+                            <h4>Tecnologie</h4>
+                            <label for="html">HTML</label>
+                            <input type="checkbox" id="html" name="html" />
+                            <label for="css">CSS</label>
+                            <input type="checkbox" id="css" name="css" />
+                            <label for="javascript">JavaScript</label>
+                            <input
+                                type="checkbox"
+                                id="javascript"
+                                name="javascript"
+                            />
+                        </fieldset>
+                        <br />
+                        <button type="submit" id="send">INVIA</button>
+                        <button type="reset" id="clear">CANCELLA</button>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <hr />
+
+        <footer>Epicode &copy;2024</footer>
+    </body>
+</html>
