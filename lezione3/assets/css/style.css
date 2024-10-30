@@ -1,0 +1,65 @@
+html, body {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    width: 50%;
+}
+
+div {
+    width: 50vw;
+    border: 2px solid black;
+}
+
+p {
+    font-family: "Rubik Wet Paint", system-ui;
+}
+
+h1 {
+    text-shadow: 4px 4px 8px #666;
+}
+
+.red {
+    color: red;
+}
+
+.center {
+    text-align: center;
+}
+
+#cssBig {
+    font-size: 1.5em;
+}
+
+a:link, a:visited {
+    color: darkolivegreen;
+}
+
+a:hover {
+    color: red;
+}
+
+.link:hover {
+    color: blue;
+}
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:last-child {
+    color: red;
+}
+
+.bigLetter::first-letter {
+    font-size: 3rem;
+    color: red;
+}
+
+ul li::before {
+    content: 'Elemento: ';
+}
+
+ul li::after {
+    content: ' - Registrato'
+}
