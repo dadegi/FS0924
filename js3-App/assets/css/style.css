@@ -1,0 +1,82 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', serif;
+	text-align: center;
+}
+
+header,
+footer {
+	background-color: black;
+	padding: 10px;
+	color: white;
+	font-size: 1.8em;
+}
+
+header img {
+	width: 5%;
+}
+
+ul li {
+	display: inline;
+	margin: 60px;
+	font-size: 0.7em;
+}
+
+ul li a:link,
+ul li a:visited,
+footer a:link,
+footer a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+ul li a:hover,
+footer a:hover {
+	text-decoration: underline;
+	color: cyan;
+}
+
+.studentList {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.studentList table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.studentList table caption {
+	background-color: black;
+	color: white;
+}
+
+.studentList table thead,
+.studentList table tfoot {
+	color: black;
+	background-color: cyan;
+	font-weight: bold;
+}
+
+td,
+th {
+	border: 1px solid black;
+}
+
+footer {
+	margin-top: 50px;
+	font-size: 0.8em;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: lightblue;
+}
+
+footer address {
+    width: 15%;
+    margin: 0 auto;
+    text-align: left;
+}
