@@ -1,0 +1,15 @@
+.blue {
+	color: blue;
+}
+
+.red {
+	color: red;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+#personsList ul li:nth-child(odd) {
+    color: blue;
+}
