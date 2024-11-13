@@ -1,0 +1,14 @@
+#menu li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 15px;
+}
+
+.required {
+	background-color: aquamarine;
+}
+
+#error {
+    background-color: red;
+    color: white;
+}
