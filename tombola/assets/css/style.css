@@ -1,0 +1,16 @@
+#tombolone {
+	max-width: 992px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+#tombolone div {
+	width: 93px;
+	height: 93px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.estratto {
+    background-color: red;
+}
