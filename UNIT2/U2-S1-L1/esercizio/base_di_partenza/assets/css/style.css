@@ -44,7 +44,7 @@ header {
 }
 
 @media screen and (min-width: 992px) {
-	header .brand img {
+	header div img {
 		margin-bottom: 20px;
 	}
 
@@ -59,24 +59,23 @@ header {
 	}
 
 	header div,
-	header .brand,
 	header nav,
-	header .brand p {
+	header div p {
 		display: inline-block;
 		margin-bottom: 0;
 		font-size: 1.2em;
 	}
 
-	header .brand {
+	header div {
 		width: 75%;
 	}
 
-	header .brand img {
+	header div img {
 		vertical-align: middle;
 		margin-bottom: 0;
 	}
 
-	header .brand p {
+	header div p {
 		margin-bottom: 0;
 	}
 
