@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Carousel immagini */
+
+#carousel {
+	width: 100%;
+	display: flex; /* Da usare se le immagini sono più piccole del contenitore a determinate risoluzioni */
+	justify-content: center;
+	position: relative;
+}
+
+#carousel img {
+	width: 25%;
+	position: absolute;
+	right: 0;
+	opacity: 0%;
+	animation-name: imgCarousel;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+}
+
+@keyframes imgCarousel {
+	from {
+		right: 0;
+		opacity: 0%;
+	}
+
+	25% {
+		right: 25%;
+		opacity: 50%;
+	}
+
+	50% {
+		right: 50%;
+		opacity: 100%;
+	}
+
+	75% {
+		right: 75%;
+		opacity: 50%;
+	}
+
+	to {
+		right: 100%;
+		opacity: 0%;
+	}
+}
+
+#carousel img:nth-child(2) {
+	animation-delay: 5s;
+}
+
+#carousel img:nth-child(3) {
+	animation-delay: 10s;
+}
+
+#carousel img:nth-child(4) {
+	animation-delay: 15s;
+}
+
+/* Titoli a scorrimento */
+
+#titles {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	overflow: hidden;
+	width: 20%;
+	position: relative;
+	border: 2px solid black;
+	margin-top: 500px; /* Solo per separare il div dal div soprastante, che per il gioco delle position andrebbe a sovrapporsi */
+}
+
+#titles h1 {
+	position: absolute;
+	top: -30;
+	color: transparent;
+	animation-name: titlesText;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+}
+
+#titles h1:nth-child(2) {
+	animation-delay: 2s;
+}
+
+#titles h1:nth-child(3) {
+	animation-delay: 4s;
+}
+
+@keyframes titlesText {
+	from {
+		color: transparent;
+		top: -30px;
+	}
+
+	15% {
+		color: black;
+		top: -5px;
+	}
+
+	50% {
+		color: transparent;
+		top: 35px;
+	}
+}
