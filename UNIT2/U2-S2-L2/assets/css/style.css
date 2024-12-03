@@ -1,0 +1,21 @@
+:root {
+    --mediaworld: #DF0000;
+    --cardText: 25px;
+}
+
+.navbar-brand {
+	width: 10%;
+	margin-right: 5px;
+}
+
+.navbar-brand img {
+	max-width: 50%;
+}
+
+.card .card-title {
+	color: var(--bs-orange);
+}
+.card .card-text {
+    color: var(--mediaworld);
+    font-size: var(--cardText);
+}
