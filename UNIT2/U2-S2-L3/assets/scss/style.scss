@@ -1,14 +1,16 @@
-@use 'partials/title';
-@use 'partials/subtitle';
-@use 'partials/table';
-@import 'mixins/mixin';
+@use 'partials/title' as *;
+@use 'partials/subtitle' as *;
+@use 'partials/table' as *;
+@use 'partials/colors' as *;
+@use 'mixins/mixin';
 
 #studentsList {
-	color: black;
+	color: $titleColor;
+    font-family: $fontF;
 }
 
 header {
-    @include primaryColor;
+    @include mixin.primaryColor;
     background-color: map-get($map: $coloursSet, $key: blu);
 }
 
@@ -40,12 +42,12 @@ header {
 }
 
 .innerParagraph {
-    @include internalText(1.5rem, bold);
+    @include mixin.internalText(1.5rem, bold);
     span {
-        @include internalText(2rem, normal);
+        @include mixin.internalText(2rem, normal);
     }
 }
 
 .myContainer {
-    @include interpolation('color', lightgray);
+    @include mixin.interpolation('color', lightgray);
 }
