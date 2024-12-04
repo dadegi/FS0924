@@ -1,0 +1,74 @@
+h1 {
+  color: navy;
+}
+
+h2 {
+  color: red;
+}
+
+table {
+  width: 50%;
+  margin: 0 auto;
+  background-image: url("https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png");
+}
+
+thead {
+  background-color: gray;
+}
+
+td {
+  width: 50%;
+}
+
+#studentsList {
+  color: black;
+}
+
+header {
+  color: navy;
+  background-color: #00f;
+  background-color: #00f;
+}
+
+.esempio {
+  background-color: green;
+}
+.esempio h1 {
+  color: gray;
+}
+.esempio h1.title {
+  font-size: 52px;
+}
+.esempio .paragraph {
+  background-color: cyan;
+  color: maroon;
+}
+.esempio .paragraph span {
+  font-weight: bold;
+}
+.esempio .childButton {
+  background-color: blue;
+  color: white;
+}
+.esempio .childButton:hover {
+  background-color: red;
+}
+
+.innerParagraph {
+  font-style: italic;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.innerParagraph span {
+  font-style: italic;
+  color: red;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.myContainer {
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=style.css.map */

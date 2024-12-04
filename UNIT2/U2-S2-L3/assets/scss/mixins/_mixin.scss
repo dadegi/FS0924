@@ -1,0 +1,17 @@
+@import '../partials/colors';
+
+@mixin primaryColor {
+    color: $primaryColor;
+    background-color: map-get($map: $coloursSet, $key: blu);
+}
+
+@mixin internalText ($dimensione, $peso) {
+    font-style: italic;
+    color: $headerHover;
+    font-size: $dimensione;
+    font-weight: $peso;
+}
+
+@mixin interpolation($element, $value) {
+    background-#{$element}: $value;
+}

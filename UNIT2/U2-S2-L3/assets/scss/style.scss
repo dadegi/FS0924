@@ -1,0 +1,51 @@
+@use 'partials/title';
+@use 'partials/subtitle';
+@use 'partials/table';
+@import 'mixins/mixin';
+
+#studentsList {
+	color: black;
+}
+
+header {
+    @include primaryColor;
+    background-color: map-get($map: $coloursSet, $key: blu);
+}
+
+.esempio {
+	background-color: green;
+
+	h1 {
+		color: gray;
+		&.title {
+			font-size: 52px;
+		}
+	}
+
+	.paragraph {
+		background-color: cyan;
+		color: maroon;
+		span {
+			font-weight: bold;
+		}
+	}
+
+	.childButton {
+		background-color: blue;
+		color: white;
+        &:hover {
+            background-color: red;
+        }
+	}
+}
+
+.innerParagraph {
+    @include internalText(1.5rem, bold);
+    span {
+        @include internalText(2rem, normal);
+    }
+}
+
+.myContainer {
+    @include interpolation('color', lightgray);
+}

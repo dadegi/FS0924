@@ -1,0 +1,17 @@
+{
+  "name": "u2-s2-l3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FS0924",
+  "license": "ISC",
+  "description": "Primo progetto SASS",
+  "keywords": [
+    "SASS"
+  ],
+  "dependencies": {
+    "sass": "^1.82.0"
+  }
+}
