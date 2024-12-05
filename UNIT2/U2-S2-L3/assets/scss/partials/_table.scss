@@ -4,7 +4,7 @@ $tableHeaderColor: gray;
 table {
     width: 50%;
     margin: 0 auto;
-    @include mixin.interpolation('image', url('https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png'));
+    @include interpolation('image', url('https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png'));
 }
 
 thead {

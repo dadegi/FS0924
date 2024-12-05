@@ -1,18 +1,131 @@
-/* Error: There is no module with the namespace "mixin".
- *   ,
- * 7 |     @include mixin.interpolation('image', url('https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png'));
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   assets\scss\partials\_table.scss 7:5  @use
- *   assets\scss\style.scss 3:1            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: There is no module with the namespace \"mixin\".\a   \2577 \a 7 \2502      @include mixin.interpolation('image', url('https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png'));\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets\\scss\\partials\\_table.scss 7:5  @use\a   assets\\scss\\style.scss 3:1            root stylesheet";
+h1 {
+  color: navy;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+h2 {
+  color: red;
+}
+
+table {
+  width: 50%;
+  margin: 0 auto;
+  background-image: url("https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png");
+}
+
+thead {
+  background-color: gray;
+}
+
+td {
+  width: 50%;
+}
+
+#studentsList {
+  color: navy;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  color: navy;
+  background-color: #00f;
+  background-color: #00f;
+}
+
+.esempio {
+  background-color: green;
+}
+.esempio h1 {
+  color: gray;
+}
+.esempio h1.title {
+  font-size: 52px;
+}
+.esempio .paragraph {
+  background-color: cyan;
+  color: maroon;
+}
+.esempio .paragraph span {
+  font-weight: bold;
+}
+.esempio .childButton {
+  background-color: blue;
+  color: white;
+}
+.esempio .childButton:hover {
+  background-color: red;
+}
+
+.innerParagraph {
+  /* mixin con un gruppo di quattro regole, due fisse e due cha saranno applicate in base ai parametri che arrivano */
+  font-style: italic;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.innerParagraph span {
+  /* mixin con un gruppo di quattro regole, due fisse e due cha saranno applicate in base ai parametri che arrivano */
+  font-style: italic;
+  color: red;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.myContainer {
+  background-color: lightgray;
+}
+
+p, h4 {
+  font-size: 1.5rem;
+  color: magenta;
+  line-height: 1.2;
+}
+
+h4 {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.condition {
+  font-weight: bolder;
+  color: red;
+}
+
+.subTitleCond {
+  color: green;
+}
+
+.images img {
+  max-width: 15%;
+  border: 2px solid pink;
+}
+
+.images {
+  position: relative;
+}
+
+.images img {
+  position: absolute;
+}
+
+#img1 {
+  top: 150px;
+  left: 150px;
+}
+
+#img2 {
+  top: 300px;
+  left: 300px;
+}
+
+#img3 {
+  top: 450px;
+  left: 450px;
+}
+
+#img4 {
+  top: 600px;
+  left: 600px;
+}
+
+/*# sourceMappingURL=style.css.map */

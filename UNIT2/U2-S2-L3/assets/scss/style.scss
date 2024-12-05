@@ -1,4 +1,4 @@
-@use 'partials/title' as *;
+@use 'partials/title.scss' as *;
 @use 'partials/subtitle' as *;
 @use 'partials/table' as *;
 @use 'partials/colors' as *;
@@ -50,4 +50,47 @@ header {
 
 .myContainer {
     @include mixin.interpolation('color', lightgray);
+}
+
+p {
+	font-size: 1.5rem;
+	color: magenta;
+	line-height: 1.2;
+}
+
+h4 {
+	@extend p;
+	text-align: right;
+	margin-top: 15px;
+}
+
+.condition {
+	font-weight: bolder;
+	@include mixin.colorCondition('red');
+}
+
+.subTitleCond {
+	@include mixin.colorCondition('');
+}
+
+.images img {
+	max-width: 15%;
+	border: 2px solid pink;
+}
+
+.images {
+	position: relative;
+}
+
+.images img {
+	position: absolute;
+}
+
+@for $i from 1 to 5 {
+	#img#{$i} {
+		$top: 150 * $i;
+		$left: 150 * $i;
+		top: #{$top}px;
+		left: #{$left}px;
+	}
 }
