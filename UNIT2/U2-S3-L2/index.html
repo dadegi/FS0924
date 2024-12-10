@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U2-S3-L2</title>
+</head>
+<body>
+
+    <button type="button" id="recoverStorage">RECUPERA</button>
+
+    <h2 id="recovered"></h2>
+
+    <hr />
+
+    <form id="createPerson">
+        <label for="personName">NOME</label>
+        <input type="text" id="personName" name="personName" />
+        <label for="personSurname">COGNOME</label>
+        <input type="text" id="personSurname" name="personSurname" />
+        <label for="personBirthDate">DATA DI NASCITA</label>
+        <input type="number" id="personDay" name="personBirthDate" placeholder="GIORNO" />
+        <input type="number" id="personMonth" name="personBirthDate" placeholder="MESE" />
+        <input type="number" id="personYear" name="personBirthDate" placeholder="ANNO" />
+        <label for="personSkills">COMPETENZE</label>
+        <input type="text" id="skill1" name="personSkills" />
+        <input type="text" id="skill2" name="personSkills" />
+        <input type="text" id="skill3" name="personSkills" />
+
+        <button type="button" id="addPerson">AGGIUNGI</button>
+    </form>
+
+    <div class="container">
+        <ul id="personsList"></ul>
+    </div>
+
+    <h2 id="completeName"></h2>
+    <h4 id="birthDate"></h4>
+    <h4 id="skills"></h4>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

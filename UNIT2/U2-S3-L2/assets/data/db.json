@@ -1,0 +1,73 @@
+{
+    "persons": [
+        {
+            "id": 1,
+            "name": "Mario",
+            "surname": "Rossi",
+            "birthDate": {
+                "day": 25,
+                "month": 9,
+                "year": 1975
+            },
+            "skills": [
+                "HTML",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Giovanna",
+            "surname": "Bianchi",
+            "birthDate": {
+                "day": 20,
+                "month": 7,
+                "year": 1983
+            },
+            "skills": [
+                "CSS",
+                "SaSS",
+                "BootStrap"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Paolino",
+            "surname": "Paperino",
+            "birthDate": {
+                "day": 21,
+                "month": 5,
+                "year": 1950
+            },
+            "skills": [
+                "BootStrap",
+                "SaSS"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "id": 1,
+            "languageType": "C#"
+        },
+        {
+            "id": 2,
+            "languageType": "Python"
+        },
+        {
+            "id": 3,
+            "languageType": "JavaScript"
+        },
+        {
+            "id": 4,
+            "languageType": "Java"
+        },
+        {
+            "id": 5,
+            "languageType": "SaSS"
+        },
+        {
+            "id": 6,
+            "languageType": ""
+        }
+    ]
+}

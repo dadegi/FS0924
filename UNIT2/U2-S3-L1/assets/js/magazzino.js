@@ -3,17 +3,17 @@ const orders = [];
 let myOrder;
 
 class Order {
-    constructor(_category, __article, _przUni) {
+    constructor(_category, __article, _przUni, _discount) {
         this.category = _category;
         this.article = __article;
         this.przUni = _przUni;
+        this.discount = _discount;
     }
 }
 
 class Mouse extends Order {
-    constructor(_discount, ...Order) {
+    constructor(...Order) {
         super(...Order);
-        this.discount = _discount;
     }
 
     static deliveryCost = 2;
@@ -24,9 +24,8 @@ class Mouse extends Order {
 }
 
 class Monitor extends Order {
-    constructor(_discount, ...Order) {
+    constructor(...Order) {
         super(...Order);
-        this.discount = _discount;
     }
 
     static deliveryCost = 15;
@@ -45,13 +44,13 @@ btnAdd.addEventListener('click', (e) => {
 
     switch (category) {
         case 'monitor':
-            myOrder = new Monitor(discount, category, article, priceUni);
+            myOrder = new Monitor(category, article, priceUni, discount);
             myOrder.finalPrice = myOrder.calculatePrice();
             orders.push(myOrder);
             break;
 
         case 'mouse':
-            myOrder = new Mouse(discount, category, article, priceUni);
+            myOrder = new Mouse(category, article, priceUni, discount);
             myOrder.finalPrice = myOrder.calculatePrice();
             orders.push(myOrder);
             break;
