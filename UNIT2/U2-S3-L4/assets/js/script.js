@@ -138,12 +138,14 @@ const checkValidity = () => {
         validity = false;
         btnSendForm.setAttribute('disabled', 'true');
         return validity;
-    } else if (userEmail.value == '') {
+    }
+    if (userEmail.value == '') {
         formError.innerText = 'Campo email obbligatorio';
         validity = false;
         btnSendForm.setAttribute('disabled', 'true');
         return validity;
-    } else if (!regexEmail.test(userEmail.value)) {
+    }
+    if (!regexEmail.test(userEmail.value)) {
         formError.innerText = 'Inserire una email valida';
         validity = false;
         btnSendForm.setAttribute('disabled', 'true');
@@ -162,7 +164,7 @@ const checkValidity = () => {
 // Funzione che gestisce l'aggiunta record O avvia il processo di modifica record
 const manageItem = async id => {
     if (!id) { // Aggiunta record
-        let newUser = new User(userName.value, userSurname.value, parseInt(userPhone.value), userEmail.value);
+        let newUser = new User(userName.value, userSurname.value, userPhone.value, userEmail.value);
         try {
             await fetch(dataURL, {
                 method: 'POST',
