@@ -15,7 +15,7 @@ let usersList = [];
 
 let dataURL = 'https://61fb890c87801d0017a2c55c.mockapi.io/v1/persone/';
 
-// Classe per gestire gli oggetti uniformemente all'API
+// Classe per gestire gli oggetti conformemente all'API
 class User {
     constructor(_name, _surname, _phone, _email) {
         this.name = _name;
